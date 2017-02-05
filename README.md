@@ -9,3 +9,10 @@
 ### Expected output
 
 ![alt tag](https://raw.githubusercontent.com/gyandeeps/webpack-split-dynamic-common/master/docs/expected.png)
+
+### Notes
+
+* `npm run webpack` runs webpack with no plugins
+* `npm run webpack:common` runs webpack with `CommonChunkPlugin`.
+    * `async: true`
+    * `children: true`
