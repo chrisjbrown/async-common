@@ -8,8 +8,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "build:common": "webpack --config webpack.common.config.js"
+    "webpack": "webpack",
+    "webpack:common": "webpack --config webpack.common.config.js"
   },
   "author": "",
   "license": "ISC"
