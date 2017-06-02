@@ -16,3 +16,5 @@
 * `npm run webpack:common` runs webpack with `CommonChunkPlugin`.
     * `async: true`
     * `children: true`
+
+ANSWER: Issue filled with webpack - https://github.com/webpack/webpack/issues/4572
