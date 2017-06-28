@@ -1,7 +1,5 @@
-var page1 = import("./page1");
-var page2 = import("./page2");
+import page1 from "./page1";
 
 export default {
-    page1,
-    page2
+    page1
 }

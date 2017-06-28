@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var path = require("path");
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = function(env) {
     return {
@@ -14,10 +15,12 @@ module.exports = function(env) {
         },
         plugins: [
             new webpack.optimize.CommonsChunkPlugin({
-                name: "common",
-                filename: "common.js",
+                name: "async-common",
                 async: true,
                 children: true
+            }),
+            new BundleAnalyzerPlugin({
+                analyzerMode: 'static',
             })
         ]
     }

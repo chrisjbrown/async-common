@@ -1,8 +1,13 @@
-import common1 from "./common1";
-import common2 from "./common2";
-
 export default function test() {
-    console.log("page1");
-    console.log(common1());
-    console.log(common2());
+    import('./async1').then(async1, function() {
+        async1.default();
+    });
+
+    import('./async2').then(async2, function() {
+        async2.default();
+    });
+
+    import('./async3').then(async3, function() {
+        async3.default();
+    });
 }

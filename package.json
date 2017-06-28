@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "webpack": "^2.2.0"
+    "webpack": "^2.2.0",
+    "webpack-bundle-analyzer": "^2.8.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack",
-    "webpack:common": "webpack --config webpack.common.config.js"
+    "webpack": "webpack --config webpack.common.config.js"
   },
   "author": "",
   "license": "MIT"
